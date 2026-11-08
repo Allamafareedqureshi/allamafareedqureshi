@@ -1,619 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allama Fareed Qureshi | Official Author & Multiverse Archive</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="monetag" content="70265b44d7ac65c70d0ee112f5661012">
+  <title>Allama Fareed Qureshi | Official Author &amp; Cosmic Lore Archive</title>
+  <meta name="description" content="Official literary archive and multiverse encyclopedia of Allama Fareed Qureshi (Son of Mohd Fareed) from Aligarh, India — creator of AFQ: The War of Infinite Sovereignties, The 90 Avatars Lore, and The Architect of the Silent Cosmos." />
+  <meta name="keywords" content="Allama Fareed Qureshi, Mohd Fareed, AFQ, Allama Superior, Allama Sovereign, AFQ The War of Infinite Sovereignties, The 90 Avatars Lore, The Architect of the Silent Cosmos, Aligarh Author" />
+  <meta name="author" content="Allama Fareed Qureshi" />
+  <link rel="canonical" href="https://netlify.app" />
+
+  <!-- Google Knowledge Graph Person, Parent & Books Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://netlify.app#person",
+        "name": "Allama Fareed Qureshi",
+        "alternateName": ["AFQ", "Allama", "Allama Superior", "Allama Sovereign"],
+        "birthDate": "2014-10-01",
+        "image": "https://i.ibb.co/PXbsH4d/image.jpg",
+        "parent": {
+          "@type": "Person",
+          "name": "Mohd Fareed"
+        },
+        "jobTitle": "Author, Creative Writer & Cosmic Lore Creator",
+        "description": "Indian author, comic creator, and cosmic storyteller from Mabood Nagar, Shahjamal, Aligarh, Uttar Pradesh, India. Creator of AFQ: The War of Infinite Sovereignties, The 90 Avatars Lore, and educational literature.",
+        "url": "https://netlify.app",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Asad Public School, Aligarh"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Mabood Nagar, Shahjamal, Aligarh, Uttar Pradesh, India"
+        },
+        "sameAs": [
+          "https://notionpress.com",
+          "https://wattpad.com",
+          "https://inkitt.com",
+          "https://scribblehub.com",
+          "https://quotev.com",
+          "https://webtoons.com",
+          "https://medium.com",
+          "https://dev.to",
+          "https://youthkiawaaz.com",
+          "https://everybodywiki.com",
+          "https://fandom.com",
+          "https://instagram.com",
+          "https://facebook.com",
+          "https://x.com",
+          "https://github.com",
+          "https://linktr.ee"
+        ]
+      },
+      {
+        "@type": "Book",
+        "name": "AFQ: The War of Infinite Sovereignties",
+        "author": { "@id": "https://netlify.app#person" },
+        "genre": ["Cosmic Science Fiction", "Mythological Fantasy", "Multiverse Action"],
+        "inLanguage": "en",
+        "publisher": { "@type": "Organization", "name": "AFQ Digital Studios" },
+        "url": "https://scribblehub.com"
+      },
+      {
+        "@type": "Book",
+        "name": "The 90 Avatars Lore (Remake Edition & Volume 2)",
+        "author": { "@id": "https://netlify.app#person" },
+        "genre": ["Fantasy", "Cosmic Lore", "Comic & Webnovel"],
+        "inLanguage": "en",
+        "url": "https://wattpad.com"
+      },
+      {
+        "@type": "Book",
+        "name": "The Architect of the Silent Cosmos",
+        "author": { "@id": "https://netlify.app#person" },
+        "genre": ["Children's Literature", "Educational Science Fiction"],
+        "inLanguage": "en",
+        "url": "https://storyweaver.org.in"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-base: #eef8ff;
+      --bg-card: rgba(255, 255, 255, 0.84);
+      --primary: #0284c7;
+      --primary-deep: #0369a1;
+      --sky-glow: #38bdf8;
+      --gold-accent: #d97706;
+      --border-glass: rgba(125, 211, 252, 0.75);
+      --text-main: #0f172a;
+      --text-body: #1e293b;
+      --text-muted: #475569;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 45%, #e0f2fe 100%);
+      color: var(--text-main);
+      line-height: 1.7;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Top Scroll Progress Bar */
+    #scrollProgress {
+      position: fixed;
+      top: 0; left: 0; height: 4px; width: 0%;
+      background: linear-gradient(90deg, #0284c7, #38bdf8, #f59e0b);
+      z-index: 9999;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+    }
+
+    /* Animated Architectural Server Grid Background */
+    .cosmic-grid {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(2, 132, 199, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(2, 132, 199, 0.06) 1px, transparent 1px);
+      background-size: 46px 46px;
+      animation: gridDrift 28s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes gridDrift {
+      0% { background-position: 0 0; }
+      100% { background-position: 46px 46px; }
+    }
+
+    /* Live Floating Particle & Shooting Star Canvas */
+    #cosmicCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 28px 18px 50px 18px;
+    }
+
+    /* Quick Top Navigation */
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1.5px solid var(--border-glass);
+      border-radius: 14px;
+      padding: 12px 20px;
+      margin-bottom: 26px;
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.08);
+    }
+    .brand { font-weight: 800; color: var(--primary-deep); font-size: 1.05rem; letter-spacing: 0.5px; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 14px; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary-deep);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 4px 10px;
+      border-radius: 8px;
+      transition: 0.25s;
+    }
+    .nav-links a:hover { background: #e0f2fe; color: #0c4a6e; }
+
+    /* Hero Banner with Rotating Sacred Orbit Rings */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(224, 242, 254, 0.92) 0%, rgba(186, 230, 253, 0.9) 55%, rgba(125, 211, 252, 0.88) 100%);
+      backdrop-filter: blur(16px);
+      border: 2px solid var(--primary);
+      border-radius: 22px;
+      padding: 48px 28px;
+      text-align: center;
+      box-shadow: 0 14px 36px rgba(2, 132, 199, 0.16);
+      margin-bottom: 34px;
+    }
+    .orbit-ring {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .ring-1 {
+      width: 340px; height: 340px;
+      border: 1.5px dashed rgba(2, 132, 199, 0.28);
+      animation: spinCW 32s linear infinite;
+    }
+    .ring-2 {
+      width: 500px; height: 500px;
+      border: 1.5px solid rgba(217, 119, 6, 0.22);
+      border-top-color: rgba(2, 132, 199, 0.5);
+      animation: spinCCW 46s linear infinite;
+    }
+    @keyframes spinCW { 100% { transform: translate(-50%, -50%) rotate(360deg); } }
+    @keyframes spinCCW { 100% { transform: translate(-50%, -50%) rotate(-360deg); } }
+
+    /* Hero Profile Avatar Styling */
+    .avatar-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 18px;
+      z-index: 3;
+    }
+    .hero-avatar {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 0 25px rgba(2, 132, 199, 0.5), 0 0 15px rgba(217, 119, 6, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hero-avatar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px rgba(56, 189, 248, 0.8), 0 0 20px rgba(217, 119, 6, 0.5);
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #0284c7, #0369a1);
+      color: #ffffff;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      padding: 6px 18px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+    }
+
+    /* Shimmering Sovereign Title */
+    .shimmer-title {
+      font-size: 2.65rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, #0c4a6e 0%, #0284c7 35%, #d97706 50%, #0284c7 65%, #0c4a6e 100%);
+      background-size: 220% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerSweep 5.5s linear infinite;
+      margin-bottom: 8px;
+    }
+    @keyframes shimmerSweep {
+      0% { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+
+    .hero-sub { font-size: 1.15rem; font-weight: 700; color: #0369a1; margin-bottom: 14px; }
+    .hero-desc { max-width: 840px; margin: 0 auto 22px auto; color: #1e3a8a; font-size: 1.04rem; }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      max-width: 940px;
+      margin: 0 auto;
+    }
+    .bio-pill {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1.5px solid #38bdf8;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      color: #0f172a;
+      box-shadow: 0 3px 10px rgba(2, 132, 199, 0.08);
+      text-align: left;
+    }
+    .bio-pill strong { display: block; color: var(--primary-deep); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.8px; }
+
+    /* Section Headers */
+    .section-header {
+      margin: 42px 0 20px 0;
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+      border-left: 6px solid var(--primary);
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.07);
+    }
+    .section-header h2 { font-size: 1.55rem; color: #0c4a6e; }
+    .section-header p { font-size: 0.95rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* Glassmorphism Cards with 3D Hover Glow */
+    .glass-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(14px);
+      border: 2px solid var(--border-glass);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 24px rgba(14, 165, 233, 0.09);
+      transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    }
+    .glass-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 14px 32px rgba(2, 132, 199, 0.18);
+    }
+    .card-tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: var(--primary-deep);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #7dd3fc;
+    }
+    .glass-card h3 { font-size: 1.38rem; color: #0c4a6e; margin-bottom: 10px; }
+    .glass-card p { color: var(--text-body); margin-bottom: 12px; font-size: 0.99rem; }
     
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="S7jj3wOdK_oEH-F7IYt0zhGbsDC3xa19A561o7dPgcg" />
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
 
-    <!-- Meta SEO for Search Engines -->
-    <meta name="description" content="Official Portal of Allama Fareed Qureshi - Visionary Author, Cosmic Lore Creator, and Creator of the Allama Superior Universe.">
-    <meta name="keywords" content="Allama Fareed Qureshi, Allama Superior, 90 Avatars Lore, AFQ War of Infinite Sovereignties, Cosmic Lore Author">
-    <meta name="author" content="Allama Fareed Qureshi">
+    /* Interactive Buttons */
+    .btn-row { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #0284c7, #0369a1);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 9px 15px;
+      border-radius: 9px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: 0 3px 10px rgba(2, 132, 199, 0.22);
+      transition: all 0.22s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.36);
+      background: linear-gradient(135deg, #0369a1, #0c4a6e);
+    }
+    .btn-sky {
+      background: #ffffff;
+      color: var(--primary-deep);
+      border: 1.5px solid var(--primary);
+      box-shadow: none;
+    }
+    .btn-sky:hover { background: #e0f2fe; color: #0c4a6e; }
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-color: #050408;
-            --card-bg: rgba(14, 12, 22, 0.85);
-            --neon-yellow: #facc15;
-            --neon-blue: #00d2ff;
-            --neon-red: #ff0055;
-            --text-main: #f9fafb;
-            --text-sub: #cbd5e1;
-        }
+    /* Scroll Reveal Animation */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Poppins', sans-serif;
-            min-height: 100vh;
-            padding: 30px 16px;
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        #neonParticleCanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .glow-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: 0;
-            pointer-events: none;
-            background: 
-                radial-gradient(circle at 10% 15%, rgba(250, 204, 21, 0.12) 0%, transparent 40%),
-                radial-gradient(circle at 90% 40%, rgba(0, 210, 255, 0.14) 0%, transparent 45%),
-                radial-gradient(circle at 50% 85%, rgba(255, 0, 85, 0.12) 0%, transparent 50%);
-        }
-
-        .wrapper {
-            position: relative;
-            z-index: 1;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .hero-section {
-            background: var(--card-bg);
-            border: 1px solid rgba(0, 210, 255, 0.35);
-            backdrop-filter: blur(16px);
-            border-radius: 24px;
-            padding: 40px 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            box-shadow: 0 0 35px rgba(0, 210, 255, 0.15), inset 0 0 20px rgba(255, 0, 85, 0.08);
-            margin-bottom: 35px;
-        }
-
-        .profile-img-container {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            padding: 4px;
-            background: linear-gradient(135deg, var(--neon-yellow), var(--neon-red), var(--neon-blue));
-            box-shadow: 0 0 30px rgba(250, 204, 21, 0.5), 0 0 50px rgba(255, 0, 85, 0.3);
-            margin-bottom: 20px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .profile-img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            display: block;
-        }
-
-        .hero-title {
-            font-family: 'Cinzel', serif;
-            font-size: 2.3rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            background: linear-gradient(90deg, var(--neon-yellow), var(--neon-red), var(--neon-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
-            text-shadow: 0 0 20px rgba(250, 204, 21, 0.3);
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255, 0, 85, 0.15);
-            color: var(--neon-yellow);
-            border: 1px solid var(--neon-yellow);
-            font-size: 0.85rem;
-            padding: 6px 20px;
-            border-radius: 50px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 22px;
-            box-shadow: 0 0 15px rgba(250, 204, 21, 0.25);
-        }
-
-        .bio-box {
-            background: rgba(7, 5, 12, 0.85);
-            border: 1px solid rgba(0, 210, 255, 0.25);
-            border-radius: 16px;
-            padding: 24px;
-            width: 100%;
-            text-align: left;
-            line-height: 1.7;
-            font-size: 0.95rem;
-            color: var(--text-sub);
-            box-shadow: inset 0 0 15px rgba(0, 210, 255, 0.05);
-        }
-
-        .bio-meta-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 14px;
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .meta-item b {
-            color: var(--neon-yellow);
-            display: block;
-            font-size: 0.82rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .section-heading {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            color: var(--neon-yellow);
-            margin: 40px 0 20px;
-            letter-spacing: 1.5px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
-        }
-
-        .section-heading::after {
-            content: '';
-            flex: 1;
-            height: 2px;
-            background: linear-gradient(90deg, var(--neon-blue), var(--neon-red), transparent);
-        }
-
-        .lore-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-
-        .lore-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 0, 85, 0.35);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-            display: flex;
-            flex-direction: column;
-            transition: all 0.3s ease;
-        }
-
-        .lore-card:hover {
-            border-color: var(--neon-blue);
-            box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
-            transform: translateY(-4px);
-        }
-
-        .lore-card .img-box {
-            width: 100%;
-            height: 300px;
-            background: #0d0a14;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .lore-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-
-        .lore-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .lore-content {
-            padding: 22px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .lore-title {
-            font-family: 'Cinzel', serif;
-            font-size: 1.25rem;
-            font-weight: 800;
-            color: var(--neon-blue);
-            margin-bottom: 8px;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
-        }
-
-        .lore-desc {
-            font-size: 0.9rem;
-            color: var(--text-sub);
-            line-height: 1.6;
-            margin-bottom: 16px;
-            flex: 1;
-        }
-
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-        }
-
-        .link-btn {
-            background: rgba(18, 14, 28, 0.85);
-            border: 1px solid rgba(0, 210, 255, 0.3);
-            border-radius: 14px;
-            padding: 16px;
-            text-decoration: none;
-            color: var(--text-main);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .link-btn:hover {
-            transform: translateY(-3px);
-            border-color: var(--neon-yellow);
-            box-shadow: 0 0 20px rgba(250, 204, 21, 0.35);
-            background: rgba(28, 20, 42, 0.95);
-        }
-
-        .link-platform {
-            font-size: 0.8rem;
-            color: var(--neon-red);
-            font-weight: 600;
-            display: block;
-        }
-
-        .story-container {
-            background: var(--card-bg);
-            border: 1px solid rgba(250, 204, 21, 0.35);
-            border-radius: 20px;
-            padding: 26px;
-            margin-bottom: 22px;
-        }
-
-        .story-header {
-            font-family: 'Cinzel', serif;
-            font-size: 1.3rem;
-            color: var(--neon-yellow);
-            margin-bottom: 10px;
-        }
-
-        .story-btn-group {
-            display: flex;
-            gap: 14px;
-            margin-top: 16px;
-            flex-wrap: wrap;
-        }
-
-        .read-btn {
-            padding: 11px 22px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            transition: all 0.2s ease;
-        }
-
-        .btn-wattpad {
-            background: var(--neon-red);
-            color: #fff;
-            box-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
-        }
-
-        .btn-wattpad:hover {
-            background: #d60046;
-            box-shadow: 0 0 25px rgba(255, 0, 85, 0.6);
-            transform: scale(1.03);
-        }
-
-        .btn-medium {
-            background: var(--neon-blue);
-            color: #050408;
-            box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
-        }
-
-        .btn-medium:hover {
-            background: #00b4dc;
-            box-shadow: 0 0 25px rgba(0, 210, 255, 0.6);
-            transform: scale(1.03);
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 25px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #64748b;
-            font-size: 0.85rem;
-        }
-    </style>
+    footer {
+      margin-top: 46px;
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+      border: 2px solid var(--primary);
+      border-radius: 18px;
+      padding: 28px 20px;
+      text-align: center;
+      color: #0c4a6e;
+    }
+    footer p { margin-bottom: 6px; }
+  </style>
 </head>
 <body>
 
-    <canvas id="neonParticleCanvas"></canvas>
-    <div class="glow-overlay"></div>
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
 
-    <div class="wrapper">
+  <!-- Background Grid & Floating Canvas -->
+  <div class="cosmic-grid"></div>
+  <canvas id="cosmicCanvas"></canvas>
 
-        <!-- Main Identity Header -->
-        <header class="hero-section">
-            <div class="profile-img-container">
-                <img src="https://i.postimg.cc/gX9hH4QN/allama-profile-png.png" alt="Allama Fareed Qureshi">
-            </div>
-            
-            <h1 class="hero-title">Allama Fareed Qureshi</h1>
-            <div class="hero-badge">Author & Cosmic Lore Creator</div>
+  <div class="container">
+    <!-- Top Navigation -->
+    <nav class="navbar">
+      <div class="brand">🌌 AFQ COSMIC ARCHIVE</div>
+      <div class="nav-links">
+        <a href="#books">Official Books</a>
+        <a href="#lore">Cosmology &amp; Astras</a>
+        <a href="#profiles">All 20+ Profiles</a>
+      </div>
+    </nav>
 
-            <div class="bio-box">
-                <p>
-                    <strong>Allama Fareed Qureshi</strong> ek creative author, visionary writer, aur grand cosmic lore ke creator hain. Chhoti umar se hi creative storytelling, complex multiverse narratives, aur novel concepts build karne me ruchi rakhte hain. Inka fictional astitva srishti aur multiversal framework me <strong>"Allama Superior" (Allama Sovereign)</strong> ke roop me jaana jaata hai[cite: 2, 5].
-                </p>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="hero-content">
+        <!-- Author Profile Image -->
+        <div class="avatar-wrapper">
+          <img src="https://i.ibb.co/PXbsH4d/image.jpg" alt="Allama Fareed Qureshi" class="hero-avatar" />
+        </div>
+        <br />
+        <span class="hero-badge">Official Author &amp; Multiverse Databook</span>
+        <h1 class="shimmer-title">Allama Fareed Qureshi</h1>
+        <p class="hero-sub">Author • Visionary Storyteller • Founder of AFQ Digital Studios</p>
+        <p class="hero-desc">
+          Welcome to the official canonical archive of Allama Fareed Qureshi (AFQ)—bridging epic multiversal sagas, cosmic Nirguna philosophy, webcomics, and middle-grade educational literature from the sacred command node of Aligarh, Uttar Pradesh, India.
+        </p>
+        
+        <div class="bio-grid">
+          <div class="bio-pill"><strong>Father's Name</strong>Mohd Fareed</div>
+          <div class="bio-pill"><strong>Date of Birth</strong>01 October 2014</div>
+          <div class="bio-pill"><strong>Location</strong>Mabood Nagar, Shahjamal, Aligarh (U.P.)</div>
+          <div class="bio-pill"><strong>Education</strong>Class 7th, Asad Public School</div>
+          <div class="bio-pill"><strong>Core Persona</strong>Allama Superior / Sovereign (Saarthi)</div>
+          <div class="bio-pill"><strong>Creative Banner</strong>AFQ Digital Studios</div>
+        </div>
+      </div>
+    </header>
 
-                <div class="bio-meta-grid">
-                    <div class="meta-item">
-                        <b>Date of Birth</b>
-                        01 October 2014
-                    </div>
-                    <div class="meta-item">
-                        <b>Location</b>
-                        Mabood Nagar, Shahjamal, Aligarh (U.P.)[cite: 2]
-                    </div>
-                    <div class="meta-item">
-                        <b>Education</b>
-                        Class 7th, Asad Public School[cite: 2]
-                    </div>
-                    <div class="meta-item">
-                        <b>Core Persona</b>
-                        Allama Superior (Cosmic Guide / Saarthi)[cite: 2, 5]
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!-- Books Section -->
+    <section id="books" class="reveal">
+      <div class="section-header">
+        <h2>📚 Official Books, Webnovels &amp; Complete Story Chronicles</h2>
+        <p>Full canonical storylines and direct verified reading links across global platforms</p>
+      </div>
 
-        <!-- Official Publications & Stories -->
-        <h2 class="section-heading">Official Literary Series</h2>
+      <!-- Book 1 -->
+      <div class="glass-card">
+        <span class="card-tag">Flagship Epic • Cosmic Sci-Fi &amp; Mythological Fantasy</span>
+        <h3>1. AFQ: The War of Infinite Sovereignties</h3>
+        <p>
+          A multiversal crisis erupts at the Aligarh Central Command Node as Evil Allama merges with cosmic entities like Rune King Thor, Void Emperor Cosmic Sukuna, Thanos, and hundreds of dark deities to threaten reality. In response, Allama Sovereign descends as the divine charioteer alongside Lord Allama, Infinity Allama, and Goku to defend the cosmos through a sprawling 5-episode conflict ending with the Lore Sword (Sorfevigein Talwar).
+        </p>
+        <div class="btn-row">
+          <a href="https://inkitt.com" target="_blank" rel="noopener" class="btn">Read on Inkitt</a>
+          <a href="https://scribblehub.com" target="_blank" rel="noopener" class="btn">Read on Scribble Hub</a>
+          <a href="https://webnovel.com" target="_blank" rel="noopener" class="btn">Read on Webnovel</a>
+          <a href="https://honeyfeed.fm" target="_blank" rel="noopener" class="btn">Read on Honeyfeed</a>
+          <a href="https://quotev.com" target="_blank" rel="noopener" class="btn">Read on Quotev</a>
+        </div>
+      </div>
 
-        <div class="story-container">
-            <div class="story-header">AFQ: The War of Infinite Sovereignties</div>
-            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6;">
-                Multiversal Kurukshetra ka param sangram! Jab Evil Allama aur King of Darkness ne srishti ke astitva ko mitaane ki saazish rachi, tab Allama Superior ne Saarthi ke roop me yoddhaon ko steer kiya aur apne Viraat Roop aur Lore Sword se srishti ka balance restore kiya.
-            </p>
-            <div class="story-btn-group">
-                <a href="https://www.wattpad.com/user/Allamafareedqureshi" target="_blank" class="read-btn btn-wattpad">Read on Wattpad</a>
-                <a href="https://medium.com/@AllamaFareedQureshi" target="_blank" class="read-btn btn-medium">Read on Medium</a>
-            </div>
+      <!-- Book 2 -->
+      <div class="glass-card">
+        <span class="card-tag">Foundational Universe • Webnovel, Webtoon &amp; Comic Series</span>
+        <h3>2. The 90 Avatars Lore (Volume 1 &amp; Volume 2)</h3>
+        <p>
+          Chronicling the Godverse across megaverses and hyperverses, Volume 1 details the origins of Lord Allama, Infinity Allama, and the Sovereign Prophecy, while Volume 2 ("Days of Absolute Aura Farming") follows Allama Superior blending in at Asad Public School in Aligarh while quietly mastering cosmic energies.
+        </p>
+        <div class="btn-row">
+          <a href="https://wattpad.com" target="_blank" rel="noopener" class="btn">Read on Wattpad</a>
+          <a href="https://webtoons.com" target="_blank" rel="noopener" class="btn">Read on WEBTOON</a>
+          <a href="https://globalcomix.com" target="_blank" rel="noopener" class="btn">Read on GlobalComix</a>
+          <a href="https://fandom.com" target="_blank" rel="noopener" class="btn btn-sky">Explore Fandom Wiki</a>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="glass-card">
+        <span class="card-tag">Educational Literature • Class 7–8 School Reader Unit</span>
+        <h3>3. The Architect of the Silent Cosmos</h3>
+        <p>
+          Set at an Aligarh school science exhibition, young Allama uses simple drawing tools to demonstrate how mathematical harmony and gravity connect atoms to galaxies, featuring integrated English–Hindi vocabulary, MCQs, and comprehension tools for learners.
+        </p>
+        <div class="btn-row">
+          <a href="https://storyweaver.org.in" target="_blank" rel="noopener" class="btn">Read on Pratham StoryWeaver</a>
+          <a href="https://notionpress.com" target="_blank" rel="noopener" class="btn btn-sky">NotionPress Author Page</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Databook Section -->
+    <section id="lore" class="reveal">
+      <div class="section-header">
+        <h2>⚔️ Cosmic Databook: Sovereign Trinity, Astras &amp; Cosmology</h2>
+        <p>Core pillars of the AFQ Macrocosm and Godverse Architecture</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="glass-card">
+          <span class="card-tag">Supreme Authority</span>
+          <h3>👑 The Sovereign Trinity</h3>
+          <p><strong>Allama Superior:</strong> Permanent avatar of All Of All Absolute Allama; manifests with glowing neon-white hair, black-and-gold data-grid robes, and black sunglasses.</p>
+          <p><strong>Allama Sovereign (A.S.Q):</strong> The Supreme Saarthi steering the Tri-Chariots of Kurukshetra.</p>
+          <p><strong>Lord Allama &amp; Infinity Allama:</strong> The Grand Master Architect (Creation) and God of Destruction (Anti-Energy).</p>
         </div>
 
-        <div class="story-container">
-            <div class="story-header">90 Avatars Lore (Remake)</div>
-            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6;">
-                Aligarh ke dharti se cosmic dimensions tak faili hui anokhi kahani. Anime characters, Marvel heroes aur cosmic avatars ka ek grand fusion narrative jo fiction ki limits ko redefine karta hai.
-            </p>
-            <div class="story-btn-group">
-                <a href="https://www.wattpad.com/user/Allamafareedqureshi" target="_blank" class="read-btn btn-wattpad">Read on Wattpad</a>
-                <a href="https://medium.com/@AllamaFareedQureshi" target="_blank" class="read-btn btn-medium">Read on Medium</a>
-            </div>
+        <div class="glass-card">
+          <span class="card-tag">Deletion Matrix Arsenal</span>
+          <h3>🗡️ Four Sovereign Astras</h3>
+          <p>Wielded simultaneously by the four-armed Viraat Roop:</p>
+          <ol style="padding-left: 18px; margin-top: 6px;">
+            <li><strong>Lore Sword (Sorfevigein Talwar):</strong> Timeline &amp; meta-concept cleaver that dissolves dark entities permanently.</li>
+            <li><strong>Upgraded Divine Mjolnir:</strong> Hyper-versal lightning hammer.</li>
+            <li><strong>Cosmic Destruct Chakra:</strong> Sacred ॐ anti-energy wheel.</li>
+            <li><strong>Cosmic Lightning Weapon:</strong> Server-grid control trident.</li>
+          </ol>
         </div>
 
-        <!-- Fictional Universe Lore & Visual Archive -->
-        <h2 class="section-heading">Multiverse Visual Archive</h2>
-
-        <div class="lore-grid">
-            <!-- Card 1: Allama Superior -->
-            <div class="lore-card">
-                <div class="img-box">
-                    <img src="https://i.postimg.cc/McfRBgPh/allama-superior-png.jpg" alt="Allama Superior Cosmic Form">
-                </div>
-                <div class="lore-content">
-                    <div class="lore-title">Allama Superior (Sovereign)</div>
-                    <div class="lore-desc">
-                        Srishti ke rath par virajmaan supreme Saarthi aur cosmic guide. Black shades aur throne ke sath reality aur code ke niyam ko steer karte hain[cite: 5].
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2: Sovereign Weapons -->
-            <div class="lore-card">
-                <div class="img-box">
-                    <img src="https://i.postimg.cc/WDqrZxWB/superior-weapons-png.jpg" alt="Divine Sovereign Weapons">
-                </div>
-                <div class="lore-content">
-                    <div class="lore-title">The Four Sovereign Astras</div>
-                    <div class="lore-desc">
-                        Upgraded Divine Mjolnir, Destruct Chakra, Lightning Weapon, aur sabse prachand <strong>Lore Sword (Sorfevigein Talwar)</strong> jo har ek dark entity ko dissolve karti hai[cite: 4].
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3: Creator Poster / Real Persona -->
-            <div class="lore-card">
-                <div class="img-box">
-                    <img src="https://i.postimg.cc/Ny2TXZJC/allama-poster-png.png" alt="Allama Fareed Qureshi Neon Poster">
-                </div>
-                <div class="lore-content">
-                    <div class="lore-title">The Creator Studio</div>
-                    <div class="lore-desc">
-                        "Not just a dreamer, I'm a builder." Writer, story creator, aur visionary student profile—Same Boy, Bigger Universe[cite: 2].
-                    </div>
-                </div>
-            </div>
+        <div class="glass-card">
+          <span class="card-tag">Nirguna Tiering System</span>
+          <h3>♾️ Cosmology &amp; Aligarh Node</h3>
+          <p><strong>Page 12 Master Server:</strong> External fictional omniverses operate as coded sub-programs within the Cosmic King Palace.</p>
+          <p><strong>Microscopic Particle Containment:</strong> Every particle of Allama Sovereign's Vishwaroop holds billions of independent Nirguna Forms.</p>
+          <p><strong>Aligarh Central Node:</strong> Earth's spiritual anchor locking cosmic order across every dimension.</p>
         </div>
+      </div>
+    </section>
 
-        <!-- Official Profiles & Verified Links -->
-        <h2 class="section-heading">Official Profiles & Footprint</h2>
+    <!-- Global Footprint Section -->
+    <section id="profiles" class="reveal">
+      <div class="section-header">
+        <h2>🌐 Verified Author Profiles &amp; Global Digital Footprint</h2>
+        <p>Official accounts, publishing portals, wikis, and social channels of Allama Fareed Qureshi</p>
+      </div>
 
-        <div class="links-grid">
-            <a href="https://www.wattpad.com/user/Allamafareedqureshi" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Stories & Novels</span>
-                    Wattpad Profile
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://medium.com/@AllamaFareedQureshi" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Articles & Series</span>
-                    Medium Profile
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://en.everybodywiki.com/Allama_Fareed_Qureshi" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Digital Encyclopedia</span>
-                    EverybodyWiki Page
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://www.youthkiawaaz.com/author/iamallamafareedqureshi/" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Writing & Opinions</span>
-                    Youth Ki Awaaz
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://www.instagram.com/allama.fareed.qureshi/" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Visuals & Updates</span>
-                    Instagram Profile
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://www.facebook.com/AllamaFareedQureshii/" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Social Community</span>
-                    Facebook Page
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://x.com/allamafaree0su" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Official Posts</span>
-                    X (Twitter)
-                </div>
-                <span>↗</span>
-            </a>
-
-            <a href="https://github.com/Allamafareedqureshi" target="_blank" class="link-btn">
-                <div>
-                    <span class="link-platform">Digital Projects</span>
-                    GitHub Profile
-                </div>
-                <span>↗</span>
-            </a>
+      <div class="glass-card">
+        <div class="btn-row">
+          <a href="https://notionpress.com" target="_blank" rel="noopener" class="btn btn-sky">NotionPress Author</a>
+          <a href="https://storyweaver.org.in" target="_blank" rel="noopener" class="btn btn-sky">StoryWeaver</a>
+          <a href="https://inkitt.com" target="_blank" rel="noopener" class="btn btn-sky">Inkitt Profile</a>
+          <a href="https://scribblehub.com" target="_blank" rel="noopener" class="btn btn-sky">Scribble Hub Profile</a>
+          <a href="https://wattpad.com" target="_blank" rel="noopener" class="btn btn-sky">Wattpad Profile</a>
+          <a href="https://quotev.com" target="_blank" rel="noopener" class="btn btn-sky">Quotev Profile</a>
+          <a href="https://webtoons.com" target="_blank" rel="noopener" class="btn btn-sky">WEBTOON Profile</a>
+          <a href="https://globalcomix.com" target="_blank" rel="noopener" class="btn btn-sky">GlobalComix</a>
+          <a href="https://fandom.com" target="_blank" rel="noopener" class="btn btn-sky">Fandom Wiki</a>
+          <a href="https://medium.com" target="_blank" rel="noopener" class="btn btn-sky">Medium</a>
+          <a href="https://dev.to" target="_blank" rel="noopener" class="btn btn-sky">Dev.to</a>
+          <a href="https://youthkiawaaz.com" target="_blank" rel="noopener" class="btn btn-sky">Youth Ki Awaaz</a>
+          <a href="https://everybodywiki.com" target="_blank" rel="noopener" class="btn btn-sky">EverybodyWiki</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-sky">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-sky">Facebook</a>
+          <a href="https://x.com" target="_blank" rel="noopener" class="btn btn-sky">X (Twitter)</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sky">GitHub</a>
+          <a href="https://linktr.ee" target="_blank" rel="noopener" class="btn btn-sky">Linktree Hub</a>
         </div>
+      </div>
+    </section>
 
-        <footer>
-            <p>© 2026 Official Archive of Allama Fareed Qureshi. All Rights Reserved.</p>
-        </footer>
+    <!-- Footer -->
+    <footer>
+      <p><strong>&copy; 2026 Allama Fareed Qureshi (Son of Mohd Fareed) • AFQ Digital Studios. All Rights Reserved.</strong></p>
+      <p>Mabood Nagar, Shahjamal, Aligarh, Uttar Pradesh, India • <em>"Not just a dreamer, I'm a builder — Same Boy, Bigger Universe."</em></p>
+    </footer>
+  </div>
 
-    </div>
+  <script>
+    // Top Reading Progress Bar
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+    });
 
-    <!-- Background Particle Engine -->
-    <script>
-        const canvas = document.getElementById('neonParticleCanvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        const neonColors = [
-            { r: 250, g: 204, b: 21 },
-            { r: 0,   g: 210, b: 255 },
-            { r: 255, g: 0,   b: 85 }
-        ];
+    // Scroll Reveal Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+    // Live Floating Nirguna Particles & Shooting Stars Canvas
+    const canvas = document.getElementById('cosmicCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, particles = [], shootingStars = [];
+
+    function resize() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    for (let i = 0; i < 65; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: Math.random() * 2.6 + 0.8,
+        vx: (Math.random() - 0.5) * 0.45,
+        vy: (Math.random() - 0.5) * 0.45,
+        color: i % 3 === 0 ? 'rgba(217, 119, 6, 0.45)' : 'rgba(2, 132, 199, 0.42)'
+      });
+    }
+
+    function spawnShootingStar() {
+      shootingStars.push({
+        x: Math.random() * width * 0.8,
+        y: Math.random() * height * 0.4,
+        len: Math.random() * 90 + 60,
+        speed: Math.random() * 7 + 6,
+        alpha: 1
+      });
+    }
+    setInterval(spawnShootingStar, 3800);
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      
+      // Draw & update floating energy particles
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+        
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+      });
+
+      // Draw & update shooting cosmic streaks
+      for (let i = shootingStars.length - 1; i >= 0; i--) {
+        const s = shootingStars[i];
+        s.x += s.speed;
+        s.y += s.speed * 0.55;
+        s.alpha -= 0.018;
+        
+        if (s.alpha <= 0) {
+          shootingStars.splice(i, 1);
+          continue;
         }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        class NeonDot {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.radius = Math.random() * 2.2 + 1;
-                this.speedX = (Math.random() - 0.5) * 0.7;
-                this.speedY = (Math.random() - 0.5) * 0.7;
-                this.color = neonColors[Math.floor(Math.random() * neonColors.length)];
-                this.pulse = Math.random() * Math.PI;
-            }
-
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                this.pulse += 0.02;
-
-                if (this.x < 0) this.x = canvas.width;
-                if (this.x > canvas.width) this.x = 0;
-                if (this.y < 0) this.y = canvas.height;
-                if (this.y > canvas.height) this.y = 0;
-            }
-
-            draw() {
-                const glowIntensity = (Math.sin(this.pulse) + 1) / 2 * 0.5 + 0.4;
-                const { r, g, b } = this.color;
-                ctx.save();
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${glowIntensity})`;
-                ctx.shadowBlur = 12;
-                ctx.shadowColor = `rgb(${r}, ${g}, ${b})`;
-                ctx.fill();
-                ctx.restore();
-            }
-        }
-
-        function init() {
-            particles = [];
-            const count = Math.floor((canvas.width * canvas.height) / 14000);
-            for (let i = 0; i < count; i++) {
-                particles.push(new NeonDot());
-            }
-        }
-
-        function render() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-            requestAnimationFrame(render);
-        }
-
-        init();
-        render();
-    </script>
+        
+        const grad = ctx.createLinearGradient(s.x, s.y, s.x - s.len, s.y - s.len * 0.55);
+        grad.addColorStop(0, `rgba(2, 132, 199, ${s.alpha})`);
+        grad.addColorStop(1, 'rgba(56, 189, 248, 0)');
+        
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(s.x, s.y);
+        ctx.lineTo(s.x - s.len, s.y - s.len * 0.55);
+        ctx.stroke();
+      }
+      
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
 </body>
 </html>
